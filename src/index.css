@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Paperlogy'; /* 폰트의 이름을 지정 */
+  src: url('./fonts/Paperlogy-4Regular.ttf') format('opentype'); /* 파일 경로와 포맷 지정 */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Paperlogy', sans-serif; /* 지정한 폰트 이름 사용 */
+}
