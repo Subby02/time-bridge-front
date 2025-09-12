@@ -8,17 +8,17 @@ export default function Navbar() {
   return (
     <div>
       <div className="navbar">
-        <Link className='nav-logo' to="/"><h2>TimeBridge</h2></Link>
+        <Link className='navLogo' to="/"><h2>TimeBridge</h2></Link>
 
-        <div className='nav-menu-group'>
-            <Link className="nav-menu" to="/"><RiUserSearchFill className='nav-icon'/>실종자 찾기</Link>
-            <Link className="nav-menu" to="/"><MdFamilyRestroom className='nav-icon'/>가족 찾기</Link>
-            <Link className="nav-menu" to="/"><FaHandshake className='nav-icon'/>매칭 조회</Link>
+        <div className='navMenuGroup'>
+            <Link className="navMenu" to="/"><RiUserSearchFill className='navIcon'/>실종자 찾기</Link>
+            <Link className="navMenu" to="/"><MdFamilyRestroom className='navIcon'/>가족 찾기</Link>
+            <Link className="navMenu" to="/"><FaHandshake className='navIcon'/>매칭 조회</Link>
         </div>
 
-        <div className='nav-btn-group'>
-            <Link className='login-btn' to="/login">로그인</Link>
-            <Link className='signup-btn'  to="/register">회원가입</Link>
+        <div className='navBtnGroup'>
+            <Link className='btn' to="/login">로그인</Link>
+            <Link className='btn' to="/register">회원가입</Link>
         </div>
       </div>
     </div>
