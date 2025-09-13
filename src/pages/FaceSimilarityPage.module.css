@@ -1,0 +1,65 @@
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descriptionGroup{
+    margin-bottom: 30px;
+    text-align: center; /* 내부 텍스트 가운데 정렬 */
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.description{
+    margin-top: 10px;
+}
+
+.typeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 142px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #83c5be;
+    margin-bottom: 10px;
+}
+
+.typeBtn{
+    display: flex;
+    color: #83c5be;
+    align-items: center; 
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.typeActivatedBtn{
+    display: flex;
+    height: 94%;
+    color: #fff;
+    align-items: center; 
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #83c5be;
+}
+
+.icon {
+    font-size: 1rem;
+    margin-right: 5px; /* 아이콘과 텍스트 사이 간격 */
+}
+
+.conditionContainer{
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
