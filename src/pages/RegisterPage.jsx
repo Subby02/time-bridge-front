@@ -94,7 +94,7 @@ export default function RegisterPage() {
         <div className={styles.formLinks}>
           <Link to="/login" className={styles.link}>로그인</Link>
         </div>
-        <button type="submit" className="btn" disabled={true}>회원가입</button>
+        <button type="submit" className="btn-mint" disabled={true}>회원가입</button>
       </form>
     </div>
   );

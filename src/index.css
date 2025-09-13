@@ -9,7 +9,7 @@ body {
     font-family: 'Paperlogy', sans-serif; /* 지정한 폰트 이름 사용 */
 }
 
-.btn {
+.btn-mint {
     background-color: #83c5be; /* 민트색 배경 */
     color: white; /* 흰색 글자 */
     text-decoration: none; /* 밑줄 제거 */
@@ -21,11 +21,36 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.btn-mint:hover {
     background-color: #6aab9f; /* 호버 시 약간 어두운 민트색 */
 }
 
 .btn-mint:disabled {
     background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-white {
+    background-color: #fff; /* 민트색 배경 */
+    color: #83c5be; /* 흰색 글자 */
+    text-decoration: none; /* 밑줄 제거 */
+    border: 1px solid #83c5be;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+    border-color: #6aab9f;
+    color: #6aab9f;
+}
+
+.btn-white:disabled {
+    background-color: #ccc;
+    border: #ccc;
+    color: #fff;
     cursor: not-allowed;
 }

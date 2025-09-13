@@ -47,7 +47,7 @@ export default function LoginPage() {
           <Link to="/register" className={styles.link}>회원가입</Link>
           <Link to="/" className={styles.link}>아이디/비밀번호 찾기</Link>
         </div>
-        <button type="submit" className="btn">로그인</button>
+        <button type="submit" className="btn-mint">로그인</button>
       </form>
     </div>
   );
