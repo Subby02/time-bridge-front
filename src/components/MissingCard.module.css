@@ -1,0 +1,52 @@
+.cardContainer{
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cardImageGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cardImage{
+    width: 128px;
+    height: 128px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cardTextGroup{
+    display: flex;
+    gap: 10px;
+    padding: 0px 12px;
+    justify-content: space-between;
+}
+
+.cardNameText{
+    color: #333;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0px 12px;
+    margin: 10px 0px;
+}
+
+.cardKeyText{
+    color: #333;
+    margin: 10px 0px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.cardValueText{
+    color: #333;
+    margin: 10px 0px;
+    text-align: right;
+}

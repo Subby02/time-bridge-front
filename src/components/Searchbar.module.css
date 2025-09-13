@@ -1,0 +1,32 @@
+.searchbarContainer{
+    display: flex;
+    width: 600px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #83c5be;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+    align-items: center; 
+    gap: 5px;
+}
+
+.searchbarContainer:hover{
+    border-color: #6aab9f;
+}
+
+.searchInput{
+    font-family: 'Paperlogy';
+    width: 585px;
+    height: 25px;
+    border: none;
+    outline: none; /* 클릭 시 나타나는 외곽선 제거 */
+}
+
+.searchBtn{
+    color: #333;
+    font-size: 1.2rem;
+}
+
+
