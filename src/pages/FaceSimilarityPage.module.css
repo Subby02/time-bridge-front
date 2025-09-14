@@ -17,6 +17,11 @@
     margin-top: 10px;
 }
 
+.faceSimilarityContainer{
+    display: flex;
+    flex-direction: row;
+}
+
 .typeContainer{
     display: flex;
     justify-content: center;
@@ -25,7 +30,6 @@
     height: 40px;
     border-radius: 10px;
     border: 1px solid #83c5be;
-    margin-bottom: 10px;
 }
 
 .typeBtn{
@@ -56,10 +60,96 @@
 }
 
 .conditionContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.select{
+    height: 42px;
+    border: 1px solid #83c5be; /* 기본 테두리 색상 */
+    border-radius: 10px;
+    outline: none; /* 클릭 시 나타나는 외곽선 제거 */
+}
+
+.faceSimilarityCardsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.faceSimilarityCardList{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selectedUserContainer{
     width: 300px;
+    height: fit-content;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: white;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selectUserInfoContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.cardImageGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardImage{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cardTextGroup{
+    display: flex;
+    gap: 10px;
+    padding: 0px 12px;
+    justify-content: space-between;
+}
+
+.cardNameText{
+    color: #333;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0px 12px;
+    margin: 10px 0px;
+}
+
+.cardKeyText{
+    color: #333;
+    margin: 10px 0px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.cardValueText{
+    color: #333;
+    margin: 10px 0px;
+    text-align: right;
 }
