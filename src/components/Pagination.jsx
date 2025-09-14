@@ -12,15 +12,15 @@ export default function Pagination({startPage, endPage}) {
 
     return (
         <div className={styles.paginationContainer}>
-        <button className={styles.btnWhite}><MdNavigateBefore className={styles.icon}/></button>
+        <button className='btn-white'><MdNavigateBefore className={styles.icon}/></button>
 
         {pageNumbers.map(page => (
-            <button className={styles.btn}>
+            <button className='btn-white'>
             {page}
             </button>
         ))}
 
-        <button className={styles.btnWhite}><MdNavigateNext className={styles.icon}/></button>
+        <button className='btn-white'><MdNavigateNext className={styles.icon}/></button>
         </div>
     );
 }
