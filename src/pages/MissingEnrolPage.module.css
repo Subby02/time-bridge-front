@@ -1,0 +1,120 @@
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descriptionGroup{
+    margin-bottom: 30px;
+    text-align: center; /* 내부 텍스트 가운데 정렬 */
+}
+
+.title{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description{
+    color: #333;
+    margin-top: 10px;
+}
+
+.missingEnrolContainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.inputImageContainer{
+    width: 480px;
+    height: 480px;
+    border: 2px dotted #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outputImageContainer{
+    width: 480px;
+    height: 480px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoOneContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.infoKey{
+    color: #333;
+    font-size: 24px;
+    margin: 0px;
+    line-height: 44px;
+}
+
+.formInput {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Paperlogy';
+    border: 1px solid #ccc; /* 기본 테두리 색상 */
+    border-radius: 10px;
+    outline: none; /* 클릭 시 나타나는 외곽선 제거 */
+    transition: border-color 0.3s ease; /* 색상 변화에 부드러운 전환 효과 추가 */
+}
+
+/* 입력창 포커스 시 스타일 */
+.formInput:focus {
+    border-color: #2a9d8f; /* 포커스 시 테두리 색상을 진한 민트색으로 변경 */
+}
+
+.select{
+    flex-grow: 1;
+    height: 44px;
+    border: 1px solid #ccc; /* 기본 테두리 색상 */
+    border-radius: 10px;
+    outline: none; /* 클릭 시 나타나는 외곽선 제거 */
+    transition: border-color 0.3s ease;
+}
+
+.select:focus{
+    border-color: #2a9d8f; 
+}
+
+.enrolBtn{
+    display: flex;
+    justify-content: right;
+}
