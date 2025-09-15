@@ -138,9 +138,12 @@ export default function MissingPage() {
         <div className={styles.container}>
           <div className={styles.missingDescriptionGroup}>
             <h1 className={styles.missingTitle}>실종자 찾기</h1>
-            <p className={styles.missingDescription}>가족들이 등록한 실종자 게시판</p>
+            <p className={styles.missingDescription}>가족들이 등록한 실종자 게시판 입니다.</p>
           </div>
           <Searchbar/>
+          <div className={styles.conditionContainer}>
+            
+          </div>
           <div className={styles.cardListContainer}>
               {cardData.map((item) => (
                   <MissingCard 
