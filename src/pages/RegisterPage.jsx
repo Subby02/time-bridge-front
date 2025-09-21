@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios'; // axios를 import 합니다.
 
 import styles from './RegisterPage.module.css';
 
@@ -12,18 +13,40 @@ export default function RegisterPage() {
   const [passwordCheck, setPasswordCheck] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleRegister = async (e) => { // 함수명을 의미에 맞게 변경
     e.preventDefault();
-    // 로그인 로직 처리
-    console.log('Username:', username);
-    console.log('Password:', password);
-    // 로그인 성공 후 홈페이지로 이동
-    navigate('/login');
+
+    if (password !== passwordCheck) {
+      alert('비밀번호가 일치하지 않습니다.');
+      return;
+    }
+
+    try {
+      const response = await axios.post('/api/users/createuser', {
+        name: name,
+        email: email,
+        password: password,
+        username: username,
+        birth: birth,
+      });
+
+      if (response.data === true) {
+        alert('회원가입이 성공적으로 완료되었습니다.');
+        navigate('/login');
+      } else {
+        alert('회원가입에 실패했습니다. 다시 시도해 주세요.');
+      }
+    } catch (error) {
+      console.error('회원가입 중 오류 발생:', error);
+      alert('회원가입 중 오류가 발생했습니다. 서버 상태를 확인해 주세요.');
+    }
   };
+
+  const isFormValid = username && email && name && birth && password && passwordCheck && password === passwordCheck;
 
   return (
     <div className={styles.registerContainer}>
-      <form onSubmit={handleLogin} className={styles.registerForm}>
+      <form onSubmit={handleRegister} className={styles.registerForm}>
         <h2 className={styles.formTitle}>회원가입</h2>
         <div className={styles.formGroup}>
           <label htmlFor="username" className={styles.formLabel}>아이디</label>
@@ -94,7 +117,7 @@ export default function RegisterPage() {
         <div className={styles.formLinks}>
           <Link to="/login" className={styles.link}>로그인</Link>
         </div>
-        <button type="submit" className="btn-mint" disabled={true}>회원가입</button>
+        <button type="submit" className="btn-mint" disabled={!isFormValid}>회원가입</button>
       </form>
     </div>
   );
