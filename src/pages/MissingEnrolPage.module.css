@@ -1,5 +1,5 @@
 .container{
-    width: 1000px;
+    width: 1046px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -33,12 +33,11 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-bottom: 30px;
 }
 
 .inputImageContainer{
-    width: 480px;
-    height: 480px;
+    width: 512px;
+    height: 512px;
     border: 2px dotted #ccc;
     border-radius: 10px;
     display: flex;
@@ -47,15 +46,25 @@
 }
 
 .outputImageContainer{
-    width: 480px;
-    height: 480px;
+    width: 1024px;
+    height: 1024px;
+    border: 1px solid #ccc;
     border-radius: 10px;
     object-fit: cover;
+    text-align: center;
+    /* 텍스트 정렬을 위한 flexbox 추가 */
+    display: flex;
+    font-size: 32px;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
 }
 
 .btnGroup{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -67,9 +76,10 @@
 }
 
 .infoContainer{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
 }
 
 .infoOneContainer{
@@ -79,6 +89,7 @@
 }
 
 .infoKey{
+    width: 85px;
     color: #333;
     font-size: 24px;
     margin: 0px;
@@ -111,10 +122,17 @@
 }
 
 .select:focus{
-    border-color: #2a9d8f; 
+    border-color: #2a9d8f;  
 }
 
 .enrolBtn{
     display: flex;
     justify-content: right;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 이미지를 컨테이너에 맞게 채움 */
+  border-radius: 10px;
 }
