@@ -1,17 +1,17 @@
 .container{
-    width: 1000px;
+    width: 1280px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .cardListContainer {
     display: grid;
-    width: 1000px;
+    width: 1280px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    grid-template-columns: repeat(3, 1fr); /* 4개의 열을 동일한 너비로 만듭니다. */
-    gap: 20px; /* 카드 사이의 간격을 설정합니다. */
+    grid-template-columns: repeat(4, 1fr); /* 4개의 열을 동일한 너비로 만듭니다. */
+    gap: 10px; /* 카드 사이의 간격을 설정합니다. */
     justify-content: center; 
 }
 
@@ -28,4 +28,7 @@
     margin-top: 10px;
 }
 
-
+.enrolBtn{
+    display: flex;
+    justify-content: right;
+}
