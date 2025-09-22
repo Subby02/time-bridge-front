@@ -11,8 +11,8 @@ export default function Navbar() {
 
       <div className={styles.navMenuGroup}>
           <Link className={styles.navMenu} to="/missing"><RiUserSearchFill className={styles.navIcon}/>실종자 찾기</Link>
-          <Link className={styles.navMenu} to="/"><MdFamilyRestroom className={styles.navIcon}/>가족 찾기</Link>
-          <Link className={styles.navMenu} to="/"><FaHandshake className={styles.navIcon}/>매칭 조회</Link>
+          <Link className={styles.navMenu} to="/family"><MdFamilyRestroom className={styles.navIcon}/>가족 찾기</Link>
+          <Link className={styles.navMenu} to="/face-similarity"><FaHandshake className={styles.navIcon}/>매칭 조회</Link>
       </div>
 
       <div className={styles.navBtnGroup}>
