@@ -1,5 +1,5 @@
 .cardContainer{
-    width: 300px;
+    flex-grow: 1;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #ccc;
