@@ -1,13 +1,14 @@
-import styles from './MissingCard.module.css'
+import styles from './FamilyCard.module.css'
 import { Link } from 'react-router-dom';
 
-export default function MissingCard({ originalImage, name, gender, birth, place, date }) {
+export default function MissingCard({ originalImage, genImage, name, gender, birth, place, date }) {
   return (
     <div className={styles.cardContainer}>
         <div className={styles.cardImageGroup}>
-            <p className={styles.cardNameText}>{name} ({gender})</p>
             <img src={originalImage} className={styles.cardImage} />
+            <img src={genImage} className={styles.cardImage} />
         </div>
+        <p className={styles.cardNameText}>{name} ({gender})</p>
         <div className={styles.cardTextGroup}>
             <div className={styles.keyTextGroup}>
                 <p className={styles.cardKeyText}>생년월일</p>
