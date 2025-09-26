@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Searchbar from "../components/Searchbar";
 import MissingCard from "../components/MissingCard";
 import Pagination from '../components/Pagination';
+import Footer from "../components/Footer";
 
 import styles from './MissingPage.module.css';
 
@@ -107,6 +108,7 @@ export default function MissingPage() {
                     onPageChange={handlePageChange}
                 />
             </div>
+            <Footer/>
         </div>
     );
 }

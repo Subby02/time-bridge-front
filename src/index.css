@@ -9,6 +9,11 @@ body {
     font-family: 'Paperlogy', sans-serif; /* 지정한 폰트 이름 사용 */
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .btn-mint {
     font-family: 'Paperlogy', sans-serif;
     background-color: #83c5be; /* 민트색 배경 */

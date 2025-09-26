@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Searchbar from "../components/Searchbar";
 import FamilyCard from "../components/FamilyCard";
 import Pagination from '../components/Pagination';
+import Footer from "../components/Footer";
 
 import styles from './FamilyPage.module.css';
 
@@ -110,6 +111,7 @@ export default function FamilyPage() {
                     onPageChange={handlePageChange}
                 />
             </div>
+            <Footer/>
         </div>
     );
 }

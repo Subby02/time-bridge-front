@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Navbar from "../components/Navbar";
 import styles from './MissingEnrolPage.module.css';
+import Footer from "../components/Footer";
 
 export default function MissingEnrolPage() {
     const [imageSrc, setImageSrc] = useState("");
     const [imageFile, setImageFile] = useState(null);
     const [missingSituation, setMissingSituation] = useState("");
     const [missingExtraEvidence, setMissingExtraEvidence] = useState("");
-    const sessionId = "a2592bf9-7793-4753-acfd-2125576d986a"; // 세션 ID
 
     const handleImageChange = (event) => {
         const file = event.target.files[0];
@@ -45,7 +45,6 @@ export default function MissingEnrolPage() {
         formData.append('type', 2);
         formData.append('name', name);
         formData.append('img_origin', imageFile);
-        formData.append('session_id', sessionId);
         formData.append('gender', gender);
         formData.append('birth', birth);
         formData.append('missingDate', missingDate);
@@ -66,6 +65,7 @@ export default function MissingEnrolPage() {
             console.error('등록 실패:', error.response ? error.response.data : error.message);
             alert('등록 실패!');
         }
+        navigate('/missing');
     };
 
     return (
@@ -170,6 +170,7 @@ export default function MissingEnrolPage() {
                     <button type="submit" className="btn-mint">등록</button>
                 </div>
             </form>
+            <Footer/>
         </div>
     );
 }

@@ -1,0 +1,88 @@
+/* Footer.module.css */
+
+.footer {
+  /* 푸터 전체 스타일 */
+  background-color: #333; /* 어두운 배경색으로 설정 */
+  color: #ccc; /* 글자색은 밝게 */
+  font-family: Arial, sans-serif; /* 폰트 설정 */
+  font-size: 0.9rem;
+  line-height: 1.5; /* 줄 간격 */
+  border-top: 1px solid #444; /* 상단 경계선 */
+  padding: 2rem; /* 전체 푸터에 패딩 추가 */
+}
+
+.container {
+  /* 내용 중앙 정렬 및 최대 너비 설정 */
+  max-width: 1280px; /* 고정 너비 대신 max-width 사용 */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* 창 크기가 줄어들면 줄바꿈 */
+  justify-content: space-between; /* 요소들 간 간격 균등 분배 */
+  gap: 2rem; /* 요소들 사이의 간격 */
+  align-items: flex-start; /* 컬럼 상단 정렬 */
+}
+
+.column {
+  /* 각 푸터 섹션(컬럼) 스타일 */
+  min-width: 250px; /* 최소 너비 설정 */
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Time Bridge 설명과 주의사항을 가로로 길게 나열하고 싶을 때 */
+.infoColumn {
+  width : 700px;
+}
+
+/* 문의 섹션은 오른쪽으로 고정 */
+.contactColumn {
+  flex-shrink: 0; /* 크기가 줄어들지 않도록 설정 */
+  width: 300px; /* 고정 너비 */
+}
+
+.column h4 {
+  /* 컬럼 제목 스타일 */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ccc; /* 제목 색상 */
+  text-transform: uppercase; /* 대문자로 변환 */
+  letter-spacing: 1px; /* 글자 간격 */
+}
+
+.column p {
+  /* 일반 텍스트 스타일 */
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.column ul {
+  /* 리스트 스타일 */
+  list-style: none; /* 기본 리스트 점 제거 */
+  padding: 0; /* 패딩 제거 */
+}
+
+.column ul li {
+  /* 리스트 아이템 스타일 */
+  margin-bottom: 0.5rem;
+}
+
+
+.socialIcons {
+  /* 소셜 아이콘 컨테이너 */
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.copyright {
+  /* 저작권 정보 스타일 */
+  width: 100%; /* 너비를 100%로 설정하여 하단에 위치 */
+  text-align: center; /* 가운데 정렬 */
+  margin-top: 2.5rem; /* 위쪽 여백 */
+  padding-top: 1.5rem;
+  border-top: 1px solid #444; /* 상단 경계선 */
+  color: #777;
+}

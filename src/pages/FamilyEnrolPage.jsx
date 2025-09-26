@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Navbar from "../components/Navbar";
 import styles from './FamilyEnrolPage.module.css';
+import Footer from "../components/Footer";
 
 
 export default function MissingEnrolPage() {
@@ -107,6 +108,7 @@ export default function MissingEnrolPage() {
           console.error('등록 실패:', error.response ? error.response.data : error.message);
           alert('등록 실패!');
       }
+      navigate('/family');
   };
   return (
     <div>
@@ -223,6 +225,7 @@ export default function MissingEnrolPage() {
               <button type="submit" className="btn-mint">등록</button>
           </div>
       </form>
+      <Footer/>
   </div>
   );
 }

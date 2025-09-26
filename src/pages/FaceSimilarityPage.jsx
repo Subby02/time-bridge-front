@@ -5,6 +5,7 @@ import axios from 'axios';
 import Navbar from "../components/Navbar";
 import Pagination from '../components/Pagination';
 import FaceSimilarityCard from '../components/FaceSimilarityCard';
+import Footer from "../components/Footer";
 
 import { RiUserSearchFill } from "react-icons/ri";
 import { MdFamilyRestroom } from "react-icons/md";
@@ -156,6 +157,7 @@ export default function FaceSimilarityPage() {
                                     birth={item.birth_date}
                                     place={item.missing_place}
                                     date={item.missing_date}
+                                    showGenImage={activeType === '가족' ? true : false}
                                 />
                             ))
                         ) : (
@@ -165,6 +167,7 @@ export default function FaceSimilarityPage() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

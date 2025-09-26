@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Pagination from '../components/Pagination';
 import Searchbar from '../components/Searchbar';
 import FaceSimilarityCard from '../components/FaceSimilarityCard';
+import Footer from "../components/Footer";
 
 import { RiUserSearchFill } from "react-icons/ri";
 import { MdFamilyRestroom } from "react-icons/md";
@@ -297,6 +298,7 @@ export default function FaceSimilarityPage() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
